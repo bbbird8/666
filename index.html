@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评价这个忍者</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            font-size: large;
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #button1 {
+            background-color: #f0f0f0;
+        }
+        #button2 {
+            background-color: #e0e0e0;
+        }
+        #button3 {
+            background-color: #d0d0d0;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: large;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: xx-large;">选择你最认可的对这个忍者的评价</h1>
+        <img src="https://img.moegirl.org.cn/common/8/89/%E7%A7%BD%E5%9C%9F%E6%B0%B4%E9%97%A8%E7%AB%8B%E7%BB%98.png" alt="秽土水门">
+        <div style="margin-top: 30px;"> <!-- Add margin-top to push buttons down -->
+            <button id="button1">阴</button>
+            <button id="button2">很阴</button>
+            <button id="button3">极阴</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        // Get references to the buttons and result div
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const button3 = document.getElementById('button3');
+        const resultDiv = document.getElementById('result');
+
+        // Function to display the result
+        function displayResult() {
+            resultDiv.textContent = '叮，抱歉，您似乎对死水进行了评价，已触发关键词，请您对我们的工作进行谅解🤓👉安排！你刚刚是评价了死水是吗？我认为死水是一个极其需要尊重的老角色，因为他在火影忍者手游存在的这八年内，给这个游戏带来了巨大的热度，如果没有死水，火影忍者手游可能就没有今天，所以死水应该是火影手游全体尊重的对象，死水不但制作精良，而且特别需要操作的手法，如果段位没有3000分玩这个忍者就不能发挥他的实力，一但不能完全发挥实力，这个忍者就是无比鸡肋的忍者，此时需要的就是意识和手法来弥补对这个角色的操作不足，当技术大成时即可打出号称游戏最需要操作的玩法，人们都称为z字闪。这个忍者真的没有你们想的那么简单，不仅仅是在游戏中，在动漫中死水也是一个沉稳伟大的父亲，虽然没给鸣人一个完整的童年，不过他在战场上，在村子中，都是耀眼的领袖，就和游戏中需要操作的阳间战神一样，黄色闪光，你抓不住!';
+        }
+
+        // Attach click event listeners to the buttons
+        button1.addEventListener('click', displayResult);
+        button2.addEventListener('click', displayResult);
+        button3.addEventListener('click', displayResult);
+    </script>
+</body>
+</html>
